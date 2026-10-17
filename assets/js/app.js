@@ -192,3 +192,18 @@
     });
   }
 })();
+
+/* ---------- 年限自动跟进（避免逐年过期） ----------
+   <span data-since="2005">21</span> 会被改写为「当前年份 − 2005」。
+   静态文本是兜底值：JS 未执行时仍能显示一个合理数字。 */
+(function () {
+  var els = document.querySelectorAll('[data-since]');
+  if (!els.length) return;
+  var year = new Date().getFullYear();
+  for (var i = 0; i < els.length; i++) {
+    var since = parseInt(els[i].getAttribute('data-since'), 10);
+    if (since > 0 && year >= since) {
+      els[i].textContent = String(year - since);
+    }
+  }
+})();
