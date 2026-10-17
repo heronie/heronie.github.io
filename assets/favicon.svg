@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#A6532C"/>
+  <rect x="6.5" y="6.5" width="51" height="51" rx="9" fill="none" stroke="#F6F0E6" stroke-opacity=".42" stroke-width="1.4"/>
+  <text x="32" y="45" text-anchor="middle" font-family="Songti SC,STSong,SimSun,serif" font-size="34" font-weight="600" fill="#FFFBF4">冯</text>
+</svg>
